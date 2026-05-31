@@ -5,10 +5,10 @@ console.log('HW4_task-2:');
 function calcAverageCalories(days) {
   let totalCalories = 0;
 
-  for (const day of days) {
-    totalCalories += day.calories;
-  }
   if (days.length > 0) {
+    for (const day of days) {
+      totalCalories += day.calories;
+    }
     return totalCalories / days.length;
   } else {
     return totalCalories;
@@ -40,3 +40,5 @@ console.log(
 ); // 2270
 
 console.log(calcAverageCalories([])); // 0
+
+console.log(typeof undefiend);
