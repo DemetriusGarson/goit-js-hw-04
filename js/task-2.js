@@ -10,9 +10,8 @@ function calcAverageCalories(days) {
       totalCalories += day.calories;
     }
     return totalCalories / days.length;
-  } else {
-    return totalCalories;
   }
+  return totalCalories;
 }
 
 console.log(
@@ -40,5 +39,3 @@ console.log(
 ); // 2270
 
 console.log(calcAverageCalories([])); // 0
-
-console.log(typeof undefiend);
